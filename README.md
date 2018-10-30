@@ -6,7 +6,7 @@
 
 
 ## Lien Heroku :
-[Lien i-love-forms sur Heroku](https://thp-gossip-portugal.herokuapp.com/)
+[Lien Gossip sur Heroku](https://thp-gossip-portugal.herokuapp.com/)
 
 ## Peer programing :
 * Romain R   slack/  @RomainRec
