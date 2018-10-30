@@ -20,18 +20,13 @@
 		<section>
 		<h1>Bienvenu <%= @user.first_name %> sur The Gossip Project !!</h1>
 		<p>Voici la liste des potins : </p>
-		<div>
      		<% @gossip.each do |gossip| %>
-        	
-           Gossip n°: <%= gossip.id%></h6>
+           Gossip n°: <%= gossip.id%>
                 L'auteur: <%= gossip.author %><br/>
                 Le contenu :<%= gossip.content %><br/>
                 <a href="/gossip/<%= gossip.id %>" class="card-link">Lien ici</a>
-              </p>
-      <% end %>
-</div>
-
-
+      			<% end %>
+      	</p>
 		</section>
 
 	</body>
