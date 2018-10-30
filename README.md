@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Mardi_S5
 
-Things you may want to cover:
+### thp_gossip
 
-* Ruby version
 
-* System dependencies
+## Lien Heroku :
+[Lien i-love-forms sur Heroku](https://thp-gossip-portugal.herokuapp.com/)
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Peer programing :
+* Romain R   slack/  @RomainRec
+* Samuel A  slack/  @sassani
