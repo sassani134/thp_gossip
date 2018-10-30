@@ -1,6 +1,8 @@
 class StaticController < ApplicationController
   def index
-  	@my_name_param = params[:id]
-	@gossip = Gossip.all
+	@gossip = Gossip.last
+	puts @gossip
+	puts "VOICI LE PARRAMAMAMAMAMMAMAMAMMAMAMMAMAMAMMAMMAMMAMAM"
+	puts params
   end
 end

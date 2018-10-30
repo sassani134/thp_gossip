@@ -10,27 +10,20 @@
 		<header>
 			<nav class="nav">
 		<ul>
-			<li><a href = "/home">Home</a></li>
+			<li><a onclick="history.back()">Home</a></li>
 			<li><a href = "/team"> Team </a></li>
 			<li><a href = "/contact"> Contact </a></li>
 		</ul>
 	</nav>
 		<header>
 
-		<section>
-			<h1>Bienvenu sur The Gossip Project !!</h1>
-			<p>Voici le dernier potin : </p>
-            <p>Pour en voir plus, ajoute ton prénom ci-dessous : </p>
-
-            <form action = "home" method="POST" >
-            	<input type="hidden" name="authenticity_token" 
-            	value="<%= form_authenticity_token %>">
-            	<input type="text" name="first_name">
-            	<input type="submit" name="Envoyer">	
-            </form>
-
-
-		</section>
-
-	</body>
+  <body class="bg-secondary text-light d-flex align-items-stretch flex-wrap">
+    <div class="container-fluid">
+      <br/>
+      <h2>Voici le potin n°<%= @good_gossip.id%></h2>
+      <p>Son auteur est <%= @good_gossip.author %></p>
+      <p>Il contient "<%= @good_gossip.content %>"</p>
+      <br/>
+    </div>
+  </body>
 </html>

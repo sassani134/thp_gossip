@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
+  get '/', to:'static#index' # page d'acceuil, on demande le nom
+  get '/home', to:'home#home'
+  post '/home', to:'home#home'
 
+  get '/gossip', to:'gossip#show' #affiche la page Gossip
 
-  get '/', to:'static#index'
-  get '/team', to:'team#team'
-  get '/contact', to:'contact#contact'
+  get '/team', to:'team#team' # affiche la page team
+  get '/contact', to:'contact#contact' # affiche la page contact
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :gossip
+  resources :home
+  resources :static
 end
