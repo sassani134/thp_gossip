@@ -1,32 +1,23 @@
 <html>
 	<head>
-		<title> Test Titre </title>
 		<meta charset="UTF-8"/>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
-		<header>
-			<nav class="nav">
-		<ul>
-			<li><a href = "/home">Home</a></li>
-			<li><a href = "/team"> Team </a></li>
-			<li><a href = "/contact"> Contact </a></li>
-		</ul>
-	</nav>
-		<header>
-
 		<section>
-			<h1>Bienvenu sur The Gossip Project !!</h1>
-			<p>Voici le dernier potin : </p>
-            <p>Pour en voir plus, ajoute ton prénom ci-dessous : </p>
+			<h1>Bienvenue sur The Gossip Project !!</h1>
 
-            <form action = "home" method="POST" >
-            	<input type="hidden" name="authenticity_token" 
+            <p>Pour voir les potins, inscris-toi ci-dessous : </p>
+<nav class="navbar navbar-light bg-light">
+  <form action = "home" method="POST" class="form-inline">
+  	<input type="hidden" name="authenticity_token" 
             	value="<%= form_authenticity_token %>">
-            	<input type="text" name="first_name">
-            	<input type="submit" name="Envoyer">	
+    <input class="form-control mr-sm-2" type="test" name="first_name" placeholder="Name" aria-label="Name">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Envoyer</button>
+  </form>
+</nav>
             </form>
 
 
@@ -34,3 +25,4 @@
 
 	</body>
 </html>
+

@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get '/contact', to:'contact#contact' # affiche la page contact
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  #resources :gossip à remettre si besoin
-  #resources :home à remettre si besoin
-  #resources :static à remettre si besoin
+  resources :gossip
+  resources :home
+  resources :static
 end
